@@ -17,7 +17,7 @@ const TodoDetails = () => {
     }
 
   return (
-    <>
+          <>
       <h1 className="fw-bold">To-do Details</h1>
       <Table striped bordered hover>
         <thead>
@@ -42,8 +42,9 @@ const TodoDetails = () => {
             </td>
           </tr>
         </tbody>
-      </Table>
-    </>
+            </Table>
+            </>
+    
   );
 };
 
