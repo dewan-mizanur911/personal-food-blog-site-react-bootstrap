@@ -25,7 +25,7 @@ const Todos = () => {
     
     return (
       <div>
-        <h1 className="fw-bold">To-Do's</h1>
+        <h1 className="fw-bold my-5">To-Do's</h1>
         <Table striped bordered hover>
           <thead>
             <tr>

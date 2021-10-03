@@ -17,13 +17,13 @@ const Meals = () => {
                 setSearch(data.meals)
             });
     }, []);
-    const [search, setSearch] = useState("");
+    const [search, setSearch] = useState([]);
     useEffect(() => {
       const newMeals = meals.filter((meal) =>
         meal.strMeal.toLowerCase().includes(searched.toLowerCase())
       );
       setSearch(newMeals);
-    }, [searched]);
+    }, []);
 
     return (
       <Container fluid>
