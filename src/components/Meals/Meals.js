@@ -24,7 +24,7 @@ const Meals = () => {
         <h2 className="fw-bold my-5">Meals</h2>
         <Row xs={1} md={3} className="g-4 mb-5">
           {
-            meals.map(meal => <Meal key={meal.idMeal} meal={meal}></Meal>)
+              meals?.length && meals.map(meal => <Meal key={meal.idMeal} meal={meal}></Meal>)
           }
         </Row>
       </Container>
