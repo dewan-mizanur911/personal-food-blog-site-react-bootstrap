@@ -1,12 +1,13 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import logo from '../../images/logo.png';
 
 const NavbarContainer = () => {
     return (
     <Navbar variant="dark" expand="lg" className="mb-5">
   <Container fluid>
-    <Navbar.Brand href="#home">
+    <Navbar.Brand href="/home">
       <img
         alt=""
         src={logo}
@@ -22,18 +23,17 @@ const NavbarContainer = () => {
         style={{ maxHeight: "100px" }}
         navbarScroll
       >
-        <Nav.Link href="#action1">Home</Nav.Link>
-        <Nav.Link href="#action2">Link</Nav.Link>
-        <NavDropdown title="Link" id="navbarScrollingDropdown">
-          <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-          <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action5">
-            Something else here
-          </NavDropdown.Item>
-        </NavDropdown>
-        <Nav.Link href="#" disabled>
-          Link
+        <Nav.Link>
+         <NavLink to="/home" className="nav-link">Home</NavLink>
+        </Nav.Link>
+        <Nav.Link>
+         <NavLink to="/todos" className="nav-link">To-do</NavLink>
+        </Nav.Link>
+        <Nav.Link>
+         <NavLink to="/meals" className="nav-link">Meals</NavLink>
+        </Nav.Link>
+        <Nav.Link>
+         <NavLink to="/about" className="nav-link">About Us</NavLink>
         </Nav.Link>
       </Nav>
     </Navbar.Collapse>
