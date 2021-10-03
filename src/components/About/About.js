@@ -5,7 +5,7 @@ import about from '../../images/about.jpg';
 
 const About = () => {
     return (
-      <Container>
+      <Container className="my-5">
         <Row xs={1} md={2}>
           <Col md={6}>
             <Card border="dark" style={{ width: "28rem" }} className="my-5">

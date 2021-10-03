@@ -7,19 +7,23 @@ const Category = () => {
     const images = [
       {
             img: "https://images.pexels.com/photos/3219547/pexels-photo-3219547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-          name: 'Burger'
+        name: 'Burger',
+          id: 1
       },
       {
           img: "https://images.pexels.com/photos/1055272/pexels-photo-1055272.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-          name: 'Cake'
+        name: 'Cake',
+          id: 2
       },
       {
           img: "https://images.pexels.com/photos/602750/pexels-photo-602750.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-          name: 'Drinks'
+        name: 'Drinks',
+          id: 3
       },
       {
           img: "https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-          name: 'Pizza'
+        name: 'Pizza',
+          id: 4
       },
     ];
     return (
@@ -34,7 +38,7 @@ const Category = () => {
         <Container fluid>
           <Row xs={1} md={3} lg={4} className="g-4">
             {images.map((img) => (
-              <CategoryFoods image={img}></CategoryFoods>
+              <CategoryFoods key={img.id} image={img}></CategoryFoods>
             ))}
           </Row>
         </Container>
