@@ -1,0 +1,14 @@
+.subscribe-container{
+    background-image: url('../../images/background-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+.btn-subscribe{
+    width: 200px;
+    background-color: teal;
+}
+.btn-subscribe:hover{
+    background-color: white;
+    color: tomato;
+}

@@ -1,0 +1,12 @@
+.category-card{
+    overflow: hidden;
+    cursor: pointer;
+}
+.category-img{
+    position: relative;
+}
+.category-img:hover{
+    transform: scale3d(1.1,1.1,1);
+    opacity: .9;
+    transition: transform .5s ease-in-out,opacity .3s;
+}
