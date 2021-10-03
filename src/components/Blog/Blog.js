@@ -41,7 +41,7 @@ const Blog = () => {
         <Row xs={1} md={2} className="g-2 mt-5">
           <BlogDetails></BlogDetails>
           <Col md={8}>
-            <Row md={2} className="g-4">
+            <Row xs={1} md={2} className="g-4">
               {foods.map((food) => (
                 <BlogFood key={food.id} food={food}></BlogFood>
               ))}

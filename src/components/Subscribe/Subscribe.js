@@ -5,7 +5,7 @@ import './Subscribe.css';
 const Subscribe = () => {
     return (
       <Container fluid className="subscribe-container my-5">
-        <Row className="h-100">
+        <Row xs={1} className="h-100">
           <Col md={6} className="text-start text-white h-100">
               <div className="d-flex flex-column justify-content-center h-100">
                     <h1>Subscribe to our Cooking Channel</h1>
@@ -17,7 +17,6 @@ const Subscribe = () => {
                     Subscribe
                     </Button>{" "}
               </div>
-
           </Col>
         </Row>
       </Container>

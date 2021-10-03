@@ -28,7 +28,7 @@ const Main = () => {
           Excepteur sint occaecat cupidatat non qui proident, sunt culpa qui
           officia deserunmollit anim id est laborum.
         </p>
-        <Row className="my-3 g-4">
+        <Row xs={1} className="my-3 g-4">
             {
                 foods.map(food => <MainFood key={food.id} food={food}></MainFood>)
             }
