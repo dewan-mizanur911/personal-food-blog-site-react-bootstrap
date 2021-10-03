@@ -8,7 +8,7 @@ const About = () => {
       <Container className="my-5">
         <Row xs={1} md={2}>
           <Col md={6}>
-            <Card border="dark" style={{ width: "28rem" }} className="my-5">
+            <Card border="dark" className="my-5">
               <Card.Header>Our Story</Card.Header>
               <Card.Body>
                 <Card.Text>
