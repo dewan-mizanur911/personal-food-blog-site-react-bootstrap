@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Col, Container, Form, FormControl, Row } from 'react-bootstrap';
+import { TodosContext } from '../../App';
+
 
 const Carousel = () => {
+  const searched = useContext(TodosContext);
+  const { handleOnSearch } = searched;
+  const handleSearch = (event) => {
+    handleOnSearch(event.target.value);
+  }
     return (
       <Container>
         <Row className="pb-5">
@@ -16,6 +23,7 @@ const Carousel = () => {
                 placeholder="Search"
                 className="me-2"
                 aria-label="Search"
+                onChange= {handleSearch}
               />
             </Form>
           </Col>

@@ -16,7 +16,9 @@ const TodoDetails = () => {
         history.push('/todos');
     }
 
-    return (
+  return (
+    <>
+      <h1 className="fw-bold">To-do Details</h1>
       <Table striped bordered hover>
         <thead>
           <tr>
@@ -34,12 +36,15 @@ const TodoDetails = () => {
             <td>{title}</td>
             {completed ? <td>Completed</td> : <td>Not completed yet</td>}
             <td>
-              <Button onClick={handleOnBack} variant="primary">Back</Button>{" "}
+              <Button onClick={handleOnBack} variant="primary">
+                Back
+              </Button>{" "}
             </td>
           </tr>
         </tbody>
       </Table>
-    );
+    </>
+  );
 };
 
 export default TodoDetails;
